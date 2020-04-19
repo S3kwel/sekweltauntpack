@@ -468,7 +468,7 @@ function PANEL:SortByColumns( c1, d1, c2, d2, c3, d3, c4, d4 )
 end
 
 function PANEL:SortByColumn( ColumnID, Desc )
-
+	math.randomseed(os.time())
 	table.Copy( self.Sorted, self.Lines )
 
 	table.sort( self.Sorted, function( a, b )
@@ -480,7 +480,15 @@ function PANEL:SortByColumn( ColumnID, Desc )
 		local aval = a:GetSortValue( ColumnID ) || a:GetColumnText( ColumnID )
 		local bval = b:GetSortValue( ColumnID ) || b:GetColumnText( ColumnID )
         
-		return tostring(aval) < tostring(bval)
+		if(tonumber(aval) == nil) then
+			return false
+		end
+		
+		if(tonumber(bval) == nil) then
+			return true
+		end
+			
+		return aval < bval
 
 	end )
 

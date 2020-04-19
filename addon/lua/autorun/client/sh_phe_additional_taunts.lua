@@ -38,7 +38,7 @@ taunts.Hunter = {
 	["Friday Escape"] = "taunts/sekweltauntpack/hunters/Friday Escape.mp3",
 	["Penis?"] = "taunts/sekweltauntpack/hunters/penis.mp3",
 	["Pocket Sand"] = "taunts/sekweltauntpack/hunters/pocket sand.mp3",
-	["Try Crack"] = "taunts/sekweltauntpack/hunters/try crack.mp3",
+	["Try Crack"] = "taunts/sekweltauntpack/hunters/try crack.mp3"
 	
 	-- Add more Hunters Taunt here...
 }
@@ -81,7 +81,11 @@ taunts.Props = {
 	["Who's been drawing dicks?"] = "taunts/sekweltauntpack/props/whos been drawing dicks.mp3",
 	["Inspector Snoop"] = "taunts/sekweltauntpack/props/inspector snoop.mp3",
 	["Darth Cena"] = "taunts/sekweltauntpack/props/Darth Cena.mp3",
-	["It's too violent!"] = "taunts/sekweltauntpack/props/too violent.mp3"
+	["It's too violent!"] = "taunts/sekweltauntpack/props/too violent.mp3",
+	["Stepping on the Beach"] = "taunts/sekweltauntpack/props/stepping on the beach.mp3",
+	["Not Insertive!"] = "taunts/sekweltauntpack/props/insertive.mp3",
+	["Stepping on the beach 2"] = "taunts/sekweltauntpack/props/stepping on the beach 2.mp3",
+	["Stepping on the beach 3"] = "taunts/sekweltauntpack/props/stepping on the beach 3.mp3",
 	-- Add more Props Taunt here...
 }
 
