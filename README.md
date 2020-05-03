@@ -1,4 +1,4 @@
-# sekweltauntpack
+# Sekwel's PHE Taunt Pack 
 
 This is a collection of taunts for [Prop Hunt: Enhanced](https://github.com/prop-hunt-enhanced/prop-hunt-enhanced) that is full of memes, YTP and basically anything that my friends find to be funny. If you use it and want to suggest your own, just name them in the comments on the Steam workshop page at https://steamcommunity.com/sharedfiles/filedetails/?id=2068139734.
 
