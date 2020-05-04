@@ -125,6 +125,7 @@ addTaunt("Props","Stop Exploding, you Cowards!","taunts/sekweltauntpack/props/st
 addTaunt("Props","Scream 65","taunts/sekweltauntpack/props/Scream_65.mp3")
 addTaunt("Props","Beautiful Sky","taunts/sekweltauntpack/props/BeautifulSky.mp3")
 addTaunt("Props","Tell Me Ya Luv Me!","taunts/sekweltauntpack/props/TellMeYaLuvMe.mp3")
+addTaunt("Props","Wizard Yensid","taunts/sekweltauntpack/props/yensid.mp3")
 
 for propTaunt,propPath in pairs(taunts.Props) do list.Set("PHE.CustomPropTaunts", propTaunt, propPath) end
 for hunterTaunt,hunterPath in pairs(taunts.Hunter) do list.Set("PHE.CustomHunterTaunts", hunterTaunt, hunterPath) end
