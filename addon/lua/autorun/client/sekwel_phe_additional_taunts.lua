@@ -19,12 +19,11 @@ else
 end 
 
 function addTaunt(list,name,location)
-	local tableToAdd;
-	
+	local tableToAdd = {};
 	--Prepare the list to use
 	if(list == "Props") then
 		tableToAdd = taunts.Props
-	else if(list == "Hunter") then
+	elseif(list == "Hunter") then
 		tableToAdd = taunts.Hunter
 	else
 		error("Taunt "..name.." was not added due to an error in the specified table name ("..list..")")
@@ -40,12 +39,10 @@ function addTaunt(list,name,location)
 	
 	--Update the list
 	taunts[list] = tableToAdd
-	end
 end
 
 -- Hunters
-addTaunt("Hunter","XP OFF2","taunts/ph_enhanced/ext_xp_off.wav")
-addTaunt("Hunter","Guuuh!","vo/k_lab/ba_guh.wv")
+
 addTaunt("Hunter","If you See Dr. Breen","vo/streetwar/rubble/ba_tellbreen.wav")
 addTaunt("Hunter","All We Gotta Do Is","taunts/sekweltauntpack/hunters/All We Gotta Do Is.mp3")
 addTaunt("Hunter","As your Vice President","taunts/sekweltauntpack/hunters/As your Vice President.mp3")
@@ -81,11 +78,7 @@ addTaunt("Hunter","Friday Escape","taunts/sekweltauntpack/hunters/Friday Escape.
 addTaunt("Hunter","Penis?","taunts/sekweltauntpack/hunters/penis.mp3")
 addTaunt("Hunter","Pocket Sand","taunts/sekweltauntpack/hunters/pocket sand.mp3")
 addTaunt("Hunter","Try Crack","taunts/sekweltauntpack/hunters/try crack.mp3")
-
-
-
-
-
+addTaunt("Hunter","Shoot This POS!","taunts/sekweltauntpack/hunters/ShootThisPOS.mp3")
 
 -- Props
 addTaunt("Props","Advanced Darkness","taunts/sekweltauntpack/props/Advanced Darkness.mp3")
@@ -129,23 +122,13 @@ addTaunt("Props","Not Insertive!","taunts/sekweltauntpack/props/insertive.mp3")
 addTaunt("Props","Stepping on the beach 2","taunts/sekweltauntpack/props/stepping on the beach 2.mp3")
 addTaunt("Props","Stepping on the beach 3","taunts/sekweltauntpack/props/stepping on the beach 3.mp3")
 addTaunt("Props","Stop Exploding, you Cowards!","taunts/sekweltauntpack/props/stop exploding.mp3")
+addTaunt("Props","Scream 65","taunts/sekweltauntpack/props/Scream_65.mp3")
+addTaunt("Props","Beautiful Sky","taunts/sekweltauntpack/props/BeautifulSky.mp3")
+addTaunt("Props","Tell Me Ya Luv Me!","taunts/sekweltauntpack/props/TellMeYaLuvMe.mp3")
 
--- if everything's done with above, let's add them as the list. 
--- They will be automatically added as soon as the game loads!
-hook.Add("Initialize", "AddCustomTaunts", function()
-    timer.Simple(math.random(4,6), function()
-        for propTaunt,propPath in pairs(taunts.Props) do
-            PHE:AddCustomTaunt(TEAM_PROPS,propTaunt,propPath)
-            resource.AddSingleFile("sound/"..propPath)
-        end
-        for hunterTaunt,hunterPath in pairs(taunts.Hunter) do 
-            PHE:AddCustomTaunt(TEAM_HUNTERS,hunterTaunt,hunterPath)
-            resource.AddSingleFile("sound/"..hunterPath)
-        end
+for propTaunt,propPath in pairs(taunts.Props) do list.Set("PHE.CustomPropTaunts", propTaunt, propPath) end
+for hunterTaunt,hunterPath in pairs(taunts.Hunter) do list.Set("PHE.CustomHunterTaunts", hunterTaunt, hunterPath) end
 
-        PHE:RefreshTauntList()
-    end)
-end)
 
 
 -- You can also add your custom taunts outside from this scope with your own [ list.Set("PHE.Custom<Prop/Hunter>Taunts", "Taunt Name", "Your Taunt Path") ]

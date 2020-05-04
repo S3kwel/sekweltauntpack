@@ -1,0 +1,6 @@
+{
+"title" : "Sekwel's PHE Taunts",
+"type" : "servercontent",
+"tags" : "fun",
+"ignore" : ["*.psd", "*.vcproj", "*.svn*"]
+}
