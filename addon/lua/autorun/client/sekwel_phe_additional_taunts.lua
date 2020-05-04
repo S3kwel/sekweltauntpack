@@ -81,7 +81,6 @@ addTaunt("Hunter","Friday Escape","taunts/sekweltauntpack/hunters/Friday Escape.
 addTaunt("Hunter","Penis?","taunts/sekweltauntpack/hunters/penis.mp3")
 addTaunt("Hunter","Pocket Sand","taunts/sekweltauntpack/hunters/pocket sand.mp3")
 addTaunt("Hunter","Try Crack","taunts/sekweltauntpack/hunters/try crack.mp3")
-addTaunt("Hunter","Shoot This POS!","taunts/sekweltauntpack/hunters/ShootThisPOS.mp3")
 
 
 
@@ -130,10 +129,6 @@ addTaunt("Props","Not Insertive!","taunts/sekweltauntpack/props/insertive.mp3")
 addTaunt("Props","Stepping on the beach 2","taunts/sekweltauntpack/props/stepping on the beach 2.mp3")
 addTaunt("Props","Stepping on the beach 3","taunts/sekweltauntpack/props/stepping on the beach 3.mp3")
 addTaunt("Props","Stop Exploding, you Cowards!","taunts/sekweltauntpack/props/stop exploding.mp3")
-addTaunt("Props","Better Reload!","taunts/sekweltauntpack/props/BetterReload.mp3")
-addTaunt("Props","Scream 65","taunts/sekweltauntpack/props/Scream_65.mp3")
-addTaunt("Props","Beautiful Sky","taunts/sekweltauntpack/props/BeautifulSky.mp3")
-addTaunt("Props","Tell Me Ya Luv Me!","taunts/sekweltauntpack/props/TellMeYaLuvMe.mp3")
 
 -- if everything's done with above, let's add them as the list. 
 -- They will be automatically added as soon as the game loads!
